@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Cor e imagem de fundo</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+            /*
+            .fundo{
+                background-color:blue; 
+                color: white;
+            }
+           */
+            body{
+                background-image: url('imagens/yoshi.png');
+
+                
+                background-repeat: no-repeat;
+                /* no-repeat, repeat, reepeat-x, repeat-y*/
+                
+               
+                background-attachment:fixed;
+                 /*fixed -> quando o site tetm barra de rolagem a img fica fixa, apenas o conteudo sobe e desce.
+                Scroll -> a img desce ou sobe com a barra de rolagem
+                */
+
+                
+                background-position: center bottom;
+                /*righ center, center center, left center, posição da imagem na tela. O primeiro valor alinha na horizontal, o segundo valor alinha na vertical. bottom a imagem fica na parte inferior */
+                /*primeiro valor: left, center, right
+                  segundo valor: top, center, bottom;
+                */
+
+            }
+            /*esta classe representa todas as propriedades acima juntas*/
+            .fundo{
+                background: blue url('imagens/yoshi.png') no-repeat fixed center bottom;
+            }
+
+        </style>
+
+    </head>
+    <body class="fundo">
+
+        <h1>Conteúdo de título 1</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        
+    </body>
+</html>
